@@ -1,0 +1,93 @@
+/********************************************
+    GENERAL STYLES
+********************************************/
+
+
+/* Reset CSS */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+/* Custom PROPERTIES */
+:root {
+    --title-color: #e53170;
+    --link-color: #00abe9;
+}
+
+
+
+
+/* Generics */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/********************************************
+    UTILITIES
+********************************************/
+
+/* Layout */
+
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.debug {
+    border: 2px dotted red;
+}
+
+/* Text */
+
+/* Border */
+
+/* UI */
+
+/* Header */
+
+/* Main */
+
+/* Footer */
+
+
+
+
+
+/********************************************
+    RESPONSIVE
+********************************************/
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+
+@media screen and (max-width: 992px) {
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
