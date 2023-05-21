@@ -73,15 +73,29 @@ img {
 /* MAIN */
 .main {
     height: calc(100vh - 70px);
-    background-color: lightcoral;
     display: flex;
+    position: relative;
 }
 
 /* SITEBAR LEFT */
 
 .sitebar-left {
     width: 70px;
-    background-color: blue;
+    position: relative;
+    left: -15px;
+    top: 0;
+    background-image: url("../img/sidebar-bg.png");
+    background-color: #051e34;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.sitebar-left .sitebar-txt {
+    font-size: 16px;
+    vertical-align: middle;
+    height: 28px;
 }
 
 /* MAIN LEFT */
@@ -118,25 +132,25 @@ Extra extra large xxl ≥1400px*/
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 576px) {
     
 }
 
+@media screen and (min-width: 768px) {
 
-
-@media screen and (max-width: 992px) {
-    
 }
 
+@media screen and (min-width: 992px) {
+    .sitebar-left {
+            width: 150px;
+        }
 
-@media screen and (max-width: 768px) {
-    
 }
 
-@media screen and (max-width: 576px) {
-    
+@media screen and (min-width: 1200px) {
+
 }
 
-@media screen and (max-width: 576px) {
-    
+@media screen and (min-width: 1400px) {
+
 }

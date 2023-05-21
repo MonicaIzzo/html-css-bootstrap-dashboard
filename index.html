@@ -24,50 +24,66 @@
 </head>
 <body>
 <!--  HEADER -->
-    <nav class="navbar navbar-expand-lg bg-light" id="navbar">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Hidden brand</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <nav class="navbar bg-light">
+        <div class="container-fluid align-items-stretch">
+<!--  logo -->
+            <a class="navbar-brand align-self-center debug">
+                <img src="img/logo.svg" alt="Logo Boolean" class="d-none d-lg-inline-block">
+                <img src="img/mobile-logo.png" alt="Logo Boolean" class="d-lg-none" id="logo-mobile">
+            </a>
+ <!--  search -->
+            <form class="d-flex flex-grow-1 me-3" role="search">
+                <div class="input-group d-flex flex-grow-1">
+                    <span class="input-group-text pt-0 pb-0 bg-white" id="basic-addon1"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control border-start-0 p-0"
+                        placeholder="Prova a cercare: Lezioni di lavarel" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </form>
+<!--  icon -->
+            <div class="nav-icon text-black-50 bg-white rounded-2 debug">
+                <i class="fa-solid fa-list d-none d-lg-inline-block ms-2 m3-2 "></i>
+                <i class="fa-solid fa-circle-question d-none d-lg-inline-block ms-2 me-2"></i>
+                <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block ms-2 me-2"></i>
+                <i class="fa-solid fa-bell d-inline-block text-warning ms-2 me-2"></i>
             </div>
         </div>
-        </nav>
+    </nav>
 
 
 
 <!--  MAIN -->
-    <main class="main container-fluid debug min-h">
-        
-       
 <!--  SITEBAR LEFT -->
-        <div class="sitebar-left debug min-h">
-            SITEBAR LEFT
-        </div>
-
-
+    <main class="main container-fluid bg-light debug">
+        <div class="sitebar-left d-flex flex-column justify-content-between p-3">
+<!--  top icon -->
+            <div class="debug">
+                <div>
+                    <i class="fa-solid fa-house pt-1 pb-1 mt-2 mb-2"></i>
+                    <span class="sitebar-txt d-none d-lg-inline-block ms-2">Home</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lines-leaning pt-1 pb-1 mt-2 mb-2"></i>
+                    <span class="sitebar-txt d-none d-lg-inline-block ms-2">Stats</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-signal pt-1 pb-1 mt-2 mb-2"></i>
+                    <span class="sitebar-txt d-none d-lg-inline-block ms-2">Signals</span>
+                </div>
+               
+            </div>
+<!--  bottom icon -->
+            <div class="debug">
+                <i class="fa-solid fa-gear pt-1 pb-1 mt-2 mb-2"></i>
+                <span class="sitebar-txt d-none d-lg-inline-block ms-2">Admin</span>
+            </div>
+        </div>   
+       
 <!--  MAIN LEFT -->
-        <div class="main-left debug min-h">
-            MAIN LEFT
-        </div>
-
+    <div class="debug">
+    MAIN LEFT
+    </div>
 
 <!-- HEADER MAIN -->
         
