@@ -12,16 +12,11 @@ box-sizing: border-box;
 
 /* Custom PROPERTIES */
 :root {
-    --title-color: #e53170;
-    --link-color: #00abe9;
+
 }
 
-
-
-
 /* Generics */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body {    
 }
 
 img {
@@ -34,19 +29,11 @@ img {
     UTILITIES
 ********************************************/
 
-/* Layout */
-
-.conteiner {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
-
 .debug {
     border: 2px dotted red;
+}
+.min-h {
+    min-height: 100px;
 }
 
 /* Text */
@@ -63,11 +50,73 @@ img {
 
 
 
+/********************************************
+    LAYOUT
+********************************************/
+
+
+/* HEADER */
+.navbar {
+    height: 70px;
+}
+
+.nav-icon .fa-solid  {
+     line-height:50px ;
+ }
+
+
+ #logo-mobile   {
+      height: 40px;
+  }
+
+
+/* MAIN */
+.main {
+    height: calc(100vh - 70px);
+    background-color: lightcoral;
+    display: flex;
+}
+
+/* SITEBAR LEFT */
+
+.sitebar-left {
+    width: 70px;
+    background-color: blue;
+}
+
+/* MAIN LEFT */
+.main-left {
+    width: calc(100vw - 70px);
+    background-color: lightgrey;
+}
+
+/* HEADER MAIN */
+
+/* PROSSIME CLASSI */
+
+/* FAQ */
+
+/* TO DO */
+
+
+/* UTENTI ATTIVI */
+
 
 
 /********************************************
     RESPONSIVE
 ********************************************/
+
+/*Extra small None <576px
+Small sm ≥576px
+Medium md ≥768px
+Large lg ≥992px
+Extra large xl ≥1200px
+Extra extra large xxl ≥1400px*/
+
+
+
+
 
 @media screen and (max-width: 1200px) {
     
