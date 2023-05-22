@@ -12,7 +12,6 @@ box-sizing: border-box;
 
 /* Custom PROPERTIES */
 :root {
-
 }
 
 /* Generics */
@@ -23,8 +22,6 @@ img {
     display: block;
     max-width: 100%;
 }
-
-
 .table img {
     width: 20px;
     vertical-align: text-top;
@@ -100,18 +97,15 @@ main {
     font-size: 24px;
     flex-grow: 1;
 }
-
 .sitebar-left .sitebar-txt {
     font-size: 16px;
     vertical-align: middle;
     height: 28px;
 }
-
 .my-btn-sterbar {
     border-radius: 0;
     padding: 0;
 }
-
 .my-btn-sterbar:hover {
     background-color: rgba(255, 255, 255, 0.3);
     color: #051e34;
@@ -137,18 +131,14 @@ main {
 .header-main-right {
     flex-basis: 100%;
     line-height: 42px;
-    vertical-align: middle;
-    
+    vertical-align: middle;  
 }
-
 .header-main-left .my-bg-color{
     background-color: #165bba;
 }
-
 .fa-square-plus {
     font-size: 42px;
-    vertical-align: bottom;
-    
+    vertical-align: bottom; 
 } 
 
 
@@ -169,7 +159,6 @@ Extra extra large xxl ≥1400px*/
 
 
 @media screen and (min-width: 576px) {
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -184,7 +173,6 @@ Extra extra large xxl ≥1400px*/
         line-height: 42px;
         vertical-align: middle;
         }
-    
 }
 
 @media screen and (min-width: 992px) {
@@ -206,14 +194,10 @@ Extra extra large xxl ≥1400px*/
         line-height: 42px;
         vertical-align: middle;
         }
-
-
 }
 
 @media screen and (min-width: 1200px) {
-
 }
 
 @media screen and (min-width: 1400px) {
-
 }
