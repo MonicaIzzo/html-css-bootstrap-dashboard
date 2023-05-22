@@ -45,8 +45,9 @@
             <div class="nav-icon text-black-50 bg-white rounded-2">
                 <i class="fa-solid fa-list d-none d-lg-inline-block ms-2 m3-2 "></i>
                 <i class="fa-solid fa-circle-question d-none d-lg-inline-block ms-2 me-2"></i>
-                <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block ms-2 me-2"></i>
-                <i class="fa-solid fa-bell d-inline-block text-warning ms-2 me-2"></i>
+                <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block ms-2 me-2"><a href="#">
+                </i>
+                <i class="fa-solid fa-bell d-inline-block text-warning ms-2 me-2"></i></a>
             </div>
         </div>
     </nav>
@@ -89,7 +90,12 @@
 <!-- studenti nuovo studente -->
 <div class="header-main-right order-md-5">
     <div class="d-inline-block">Nuovo studente</div>
-    <div class="d-inline-block ms-3"><i class="fa-regular fa-square-plus"></i></div>
+    <div class="d-inline-block ms-3">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <i class="fa-regular fa-square-plus"></i>
+        </a>
+</div>
 </div>
 
 <!-- boolean -->
@@ -337,11 +343,70 @@
     </div>
 </div>
 </div>
-
-
-
-
 </main>
+<!-- OFFCANVAS -->
+<div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="cognome" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="cognome" aria-describedby="emailHelp">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+<div class="row g-3">
+    <div class="col-6">
+        <label for="exampleInputEmail1" class="form-label">Città</label>
+        <input type="text" class="form-control" id="citta">
+    </div>
+    <div class="col-4">
+        <label for="exampleInputEmail1" class="form-label">Stato</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>scegli...</option>
+            <option value="1">Italia</option>
+            <option value="2">Francia</option>
+            <option value="3">Usa</option>
+        </select>
+    </div>
+    <div class="col-2">
+        <label for="exampleInputEmail1" class="form-label">CAP</label>
+        <input type="password" class="form-control" id="cap">
+    </div>
+</div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Foto</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Salva</button>
+                <button type="submit" class="btn btn-warning">Svuota</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 
         
