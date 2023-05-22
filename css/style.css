@@ -69,22 +69,15 @@ main {
 .navbar {
     height: 70px;
 }
-
 .nav-icon .fa-solid  {
      line-height:50px ;
  }
-
-
- #logo-mobile   {
+#logo-mobile   {
       height: 40px;
   }
-
-
-  
-  .dropdown-toggle {
+.dropdown-toggle {
     padding: 0;
   }
-
 .dropstart .dropdown-toggle::before {
     display: none;
 }
@@ -94,7 +87,7 @@ main {
 .main {
     height: calc(100vh - 70px);
     display: flex;
-    position: relative;
+    overflow: auto;
 }
 
 /* SITEBAR LEFT */
@@ -106,7 +99,7 @@ main {
     color: white;
     text-align: center;
     font-size: 24px;
-    transform:translate(-1.5rem, 0)
+    flex-grow: 1;
 }
 
 .sitebar-left .sitebar-txt {
@@ -132,14 +125,6 @@ main {
 }
 
 /* HEADER MAIN */
-.header-main {
-    height: 260px;
-    margin: 0 -1.5rem;
-    width: calc(100vw - 60px);
-    position: fixed;
-    z-index: 1;
-    
-}
 
 .header-main-left {
     flex-basis: 100%;
@@ -165,22 +150,6 @@ main {
     
 } 
 
-.main-body {
-    overflow: auto;
-    margin-top: 260px;
-}
-
-# With npm npm i @popperjs/core # With Yarn yarn add @popperjs/core
-
-/* PROSSIME CLASSI */
-
-/* FAQ */
-
-/* TO DO */
-
-
-/* UTENTI ATTIVI */
-
 
 
 /********************************************
@@ -203,9 +172,6 @@ Extra extra large xxl ≥1400px*/
 }
 
 @media screen and (min-width: 768px) {
-    .header-main {
-    height: 136px;
-    }
     .header-main-left {
         flex-basis: 35%;
         }
@@ -217,10 +183,7 @@ Extra extra large xxl ≥1400px*/
         line-height: 42px;
         vertical-align: middle;
         }
-    .main-body {
-        
-        margin-top: 136px;
-        }
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -229,7 +192,6 @@ Extra extra large xxl ≥1400px*/
         }
     .header-main {
         height: 120px; 
-        width: calc((100vw - 70px) - 70px);
     }
     .header-main-left {
         flex-basis: 40%;
