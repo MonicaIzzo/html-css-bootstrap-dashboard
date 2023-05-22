@@ -87,7 +87,6 @@ main {
 .main {
     height: calc(100vh - 70px);
     display: flex;
-    overflow: auto;
 }
 
 /* SITEBAR LEFT */
@@ -122,6 +121,8 @@ main {
 /* MAIN LEFT */
 .main-right {
     width: calc(100vw - 40px);
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 /* HEADER MAIN */
